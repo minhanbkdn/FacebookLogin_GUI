@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:src="@drawable/facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@id/imv_fb"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:hint="@string/hint_email_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/edt_pass"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:textColor="@color/black"
+        android:hint="@string/hint_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@id/edt_pass"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:textColor="@color/white"
+        android:background="@color/blue_dark"
+        android:text="@string/text_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_large"/>
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="@string/text_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="?"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:paddingHorizontal="10dp"
+        android:textStyle="bold"
+        android:background="@color/blue_dark"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/edt_margin_right"
+
+
+        />
+</RelativeLayout>
